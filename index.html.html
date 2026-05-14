@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio | GitHub Pages</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #24292e;
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .content {
+            padding: 2rem;
+        }
+        h1 { margin-top: 0; }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #0366d6;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenido a mi sitio web</h1>
+        <p>Producido y alojado gratuitamente en GitHub Pages</p>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h2>Sobre el proyecto</h2>
+            <p>Este es un ejemplo de cómo estructurar un sitio estático. Puedes usar este espacio para presentar tu trabajo, un currículum digital o una galería de videos.</p>
+            
+            <h3>Mis Trabajos</h3>
+            <div class="project-grid">
+                <div class="card">
+                    <h4>Proyecto 1</h4>
+                    <p>Descripción breve de lo que hiciste en este proyecto.</p>
+                </div>
+                <div class="card">
+                    <h4>Proyecto 2</h4>
+                    <p>Puedes incluir enlaces a videos o archivos externos aquí.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 - Hecho con GitHub Pages
+    </footer>
+
+</body>
+</html>
