@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arándano Nook | Portafolio</title>
+    <style>
+        :root {
+            --primario: #24292e;
+            --acento: #0366d6;
+            --fondo: #ffffff;
+            --texto: #333;
+        }
+        body { font-family: 'Helvetica', sans-serif; margin: 0; color: var(--texto); line-height: 1.6; }
+        
+        /* Navegación */
+        nav { background: var(--primario); padding: 1rem; position: sticky; top: 0; z-index: 100; }
+        nav ul { list-style: none; display: flex; justify-content: center; margin: 0; padding: 0; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+
+        /* Hero / Portada */
+        header { text-align: center; padding: 100px 20px; background: #f8f9fa; }
+        header h1 { font-size: 3rem; margin-bottom: 10px; }
+
+        /* Secciones */
+        .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
+        h2 { border-bottom: 2px solid var(--acento); display: inline-block; padding-bottom: 5px; }
+
+        /* Galería Estilo Google Sites */
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .galeria img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover; /* Esto hace que todas las fotos se vean uniformes */
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .galeria img:hover { transform: scale(1.03); }
+
+        footer { text-align: center; padding: 40px; background: var(--primario); color: white; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Acerca de mí</a></li>
+            <li><a href="#trabajos">Trabajos</a></li>
+            <li><a href="mailto:tu-correo@ejemplo.com">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header id="inicio">
+        <h1>Arándano Nook Photo</h1>
+        <p>Fotografía a partir de la observación.</p>
+    </header>
+
+    <div class="container" id="sobre-mi">
+        <h2>Acerca de mí</h2>
+        <p>Hola, soy Andrea Pérez. Me especializo en capturar esencias y narrativas visuales. Con formación en <strong>Pohualizcalli</strong>, transformo objetos e historias en imágenes memorables.</p>
+    </div>
+
+    <div class="container" id="trabajos">
+        <h2>Algunos de mis trabajos</h2>
+        <div class="galeria">
+            <img src="foto1.jpg" alt="Descripción de foto">
+            <img src="foto2.jpg" alt="Descripción de foto">
+            <img src="foto3.jpg" alt="Descripción de foto">
+            <img src="foto4.jpg" alt="Descripción de foto">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Arándano Nook | Hecho con amor y GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
